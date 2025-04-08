@@ -2,7 +2,7 @@ const botao = document.getElementById('add');
 const entrada = document.getElementById('entrada');
 const lista = document.getElementById('lista');
 
-const items = [];
+const items = []; 
 
 botao.addEventListener('click',
     function () {
