@@ -15,8 +15,11 @@ botao.addEventListener('click',
 )
 function atualizar(){
     lista.innerHTML = null;
-    let li = document.createElement("li");
-    li.textContent = "Deu certo";
-    lista.appendChild(li);
+    for (let x = 0; x < items.length; x++) {
+        let li = document.createElement("li");
+        li.textContent =  lista[x];
+        lista.appendChild(li);
+        
+    }
 
 }
