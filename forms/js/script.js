@@ -8,7 +8,6 @@ document.getElementById('formAgendamento').addEventListener('submit', function (
     const tu = document.getElementById('tu').value;
 
     let tipo = null;
-    let quinzenaL = null;
 
     if (escolhas == 1) tipo = " rj";
     else if (escolhas == 2) tipo = " pr";
