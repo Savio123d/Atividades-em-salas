@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento Barbearia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container mt-5" style="max-width: 600px;">
+        <h2 class="text-center mb-4">TESTE</h2>
+        <form id="formAgendamento">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome completo</label>
+                <input type="text" id="nome" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="cpf" class="form-label">idade</label>
+                <input type="text" id="idade" class="form-control" placeholder="0" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="escolhas" class="form-label">Exemplo escolhas</label>
+                <select id="escolhas" class="form-select" required>
+                    <option value="">Selecione</option>
+                    <option value=1>rj</option>
+                    <option value=2>pr</option>
+                    <option value=3>xd</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="data" class="form-label">Data</label>
+                <input type="date" id="data" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Tu é ?</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="tu" value=1 required>
+                    <label class="form-check-label" for="sim">Sim</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="tu" value=2 required>
+                    <label class="form-check-label" for="nao">Não</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Confirmar</button>
+        </form>
+        <div id="resumo" class="mt-4"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
